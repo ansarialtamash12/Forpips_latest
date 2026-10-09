@@ -1,8 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { courseLinks, toolLinks, ibLinks, companyLinks } from "../constant/constant";
-
-
+import {
+  courseLinks,
+  toolLinks,
+  ibLinks,
+  companyLinks,
+} from "../constant/constant";
 
 const FooterColumn = ({ title, links }) => (
   <div className="flex flex-col gap-3">
@@ -23,7 +26,10 @@ const FooterColumn = ({ title, links }) => (
 
 export default function Footer() {
   return (
-    <footer id="tools" className="bg-[#060913] px-4 py-12 sm:px-6 sm:py-16 lg:px-16">
+    <footer
+      id="tools"
+      className="bg-[#060913] px-4 py-12 sm:px-6 sm:py-16 lg:px-16"
+    >
       <div className="mx-auto max-w-7xl">
         {/* ============ TOP ============ */}
         <div className="grid gap-10 border-b border-white/10 pb-12 sm:grid-cols-2 lg:grid-cols-[1.35fr_0.8fr_0.8fr_0.75fr_0.75fr]">
@@ -45,7 +51,7 @@ export default function Footer() {
       lg:w-[240px]
       xl:w-[245px]
     "
-              style={{ width: 'auto', height: 'auto' }}
+              style={{ width: "auto", height: "auto" }}
             />
 
             {/* Description */}
@@ -61,8 +67,8 @@ export default function Footer() {
       md:text-[16px]
     "
             >
-              A free Forex education and Introducing Broker academy. We teach, mentor,
-              and guide — we do not broker, invest, or signal.
+              A free Forex education and Introducing Broker academy. We teach,
+              mentor, and guide — we are not a broker or signal provider.
             </p>
 
             {/* Social Icons */}
@@ -197,20 +203,26 @@ export default function Footer() {
 
         {/* ============ DISCLAIMER ============ */}
         <p className="mt-8 font-[Inter,ui-sans-serif,system-ui] text-[13px] leading-6 text-slate-500 sm:text-[14px] sm:leading-7">
-          <strong className="font-semibold text-slate-300">Risk &amp; disclosure: </strong>
-          Forpips is an educational platform. We are not a Forex broker, investment company,
-          or signal provider, and nothing on this site is financial advice. Forex and CFD
-          trading carries a high level of risk and may not be suitable for everyone — you can
-          lose more than your initial deposit. Introducing Broker commission is paid by
-          third-party regulated brokers and is never fixed or guaranteed; it depends entirely
-          on referred clients&apos; trading activity. Always verify a broker&apos;s regulatory
-          status independently before opening an account.
+          <strong className="font-semibold text-slate-300">
+            Risk &amp; disclosure:{" "}
+          </strong>
+          Forpips is an educational platform. We are not a Forex broker,
+          investment company, or signal provider, and nothing on this site is
+          financial advice. Forex and CFD trading carries a high level of risk
+          and may not be suitable for everyone — you can lose more than your
+          initial deposit. Introducing Broker commission is paid by third-party
+          regulated brokers and is never fixed or guaranteed; it depends
+          entirely on referred clients&apos; trading activity. Always verify a
+          broker&apos;s regulatory status independently before opening an
+          account.
         </p>
 
         {/* ============ BOTTOM BAR ============ */}
         <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-6 font-[Inter,ui-sans-serif,system-ui] text-[12px] text-slate-500 sm:flex-row sm:items-center sm:justify-between sm:gap-2 sm:text-[13px]">
           <span>© 2026 Forpips. All rights reserved.</span>
-          <span className="text-slate-400">Education only — not a broker, not investment advice.</span>
+          <span className="text-slate-400">
+            Education only — not a broker, not investment advice.
+          </span>
         </div>
       </div>
     </footer>

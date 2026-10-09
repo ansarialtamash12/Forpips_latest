@@ -100,7 +100,7 @@ export default function ForexCommunityPage() {
         <div className="relative mx-auto mt-16 max-w-4xl">
           <div className="relative mx-auto flex w-full items-center justify-center overflow-hidden rounded-[24px] border-2 border-[#0CBFFF]/20 bg-[#0b1120]/80 p-2 backdrop-blur-sm">
             <Image
-              src="/Community-Banner.png"
+              src="/Connected Global Trading Network.png"
               alt="ForPips community banner"
               width={1200}
               height={600}
